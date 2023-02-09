@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-    test: string = "hidden "
+    test: string = "hidden"
   ngClick(){
     if (this.test === "hidden" ){
       this.test   = "block scalein  animation-duration-90"
