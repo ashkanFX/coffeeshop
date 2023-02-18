@@ -1,12 +1,13 @@
-<div class="col-12  h-4rem border-round-lg  flex flex-row-reverse" [ngStyle]="{backgroundColor:'var(--gray-50)'}">
+<div class="col-12 flex justify-content-center absolute p-0  z-1">
+  <div class="col-11 my-auto  h-4rem border-round-bottom-2xl  fixed  flex flex-row-reverse" [ngStyle]="{backgroundColor:'var(--gray-50)'}">
   <div class="md:hidden absolute flex mr-2 align-items-center h-3rem">
      <button pButton pRipple type="button" (click)="ngClick()"
               class="p-button-secondary p-button-text md:w-5rem w-full md:w-6rem ">
     <i class=" pi-bars pi"></i>
      </button>
   </div>
-  <ul style="list-style: none"
-      class=" {{test}}     md:block    border-round md:h-1rem  bg-gray-50 h-19rem md:ml-0 md:mt-auto mt-7  md:flex lg:col-6 xl:col-6 flex-row-reverse md:col-12 col-12 align-items-center">
+  <ul style="list-style: none  "
+      class=" {{test}}   md:block  md:h-3rem bg-gray-50   md:ml-0  md:m-0  h-20rem mt-7  h-auto m-0 md:flex lg:col-6 xl:col-6 flex-row-reverse md:col-12   col-12 align-items-center">
     <li class="my-3 ">
         <button pButton pRipple type="button"
               class=" w-full md:w-5rem flex justify-content-center md:w-2rem p-button-success p-button-text">
@@ -41,4 +42,6 @@
     </li>
 
   </ul>
+</div>
+
 </div>

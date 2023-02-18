@@ -1,0 +1,32 @@
+<div class="w-full h-screen bg-gray-100 ">
+  <img src="../../assets/image/pexels-marta-dzedyshko-2067431.jpg " class="w-full absolute h-full"
+       style="object-fit: cover" alt="">
+  <div class="w-full h-full bg-black-alpha-30 absolute flex flex-wrap justify-content-center align-items-center ">
+    <div class="w-25rem h-25rem text-50   glassBackground">
+      <div class="p-8 h-full">
+        <h1 style="font-family: 'Corbel Light'"> welcome </h1>
+        <p class="text-cyan-50 mt-4 mb-4  " style="font-family: 'Corbel Light'">Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Accusantium distinctio et explicabo illo necessitatibus obcaecati, ratione sequi. Aliquam,
+          animi culpa earum exercitationem illo nam, nisi porro sint tempora tempore totam.</p>
+
+        <p-button label="Click"></p-button>
+
+      </div>
+    </div>
+    <div class="w-25rem h-25rem  bg-black-alpha-30">
+      <p-galleria [autoPlay]="true" [value]="images"   [circular]="true" [responsiveOptions]="responsiveOptions" [containerStyle]="{'max-width': '640px'}" [numVisible]="5"
+    [showThumbnails]="false" [showIndicators]="true">
+    <ng-template pTemplate="item" let-item>
+       <img [src]="item.previewImageSrc" class="w-full h-25rem" style="object-fit: cover"/>
+    </ng-template>
+    <ng-template pTemplate="thumbnail" let-item>
+        <div class="grid grid-nogutter justify-content-center" style="height: 100%">
+            <img [src]="item.thumbnailImageSrc" style="display: block;" />
+        </div>
+    </ng-template>
+</p-galleria>
+    </div>
+  </div>
+</div>
+
+
